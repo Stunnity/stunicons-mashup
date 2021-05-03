@@ -15,3 +15,17 @@ Install the dependencies
 cd stunicons-mashup
 npm install
 ```
+
+
+Serve the app
+
+```bash
+npm run dev
+```
+And browse
+
+```bash
+http://localhost:5000
+```
+
+Tada !!
