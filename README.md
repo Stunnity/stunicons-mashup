@@ -1,2 +1,2 @@
-# stunicons-mashup
+# Stunicons  Mashup
 Mashup with Stunicons
