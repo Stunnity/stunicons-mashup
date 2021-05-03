@@ -13,7 +13,8 @@ Install the dependencies
 
 ```bash
 cd stunicons-mashup
-npm install
+npm i
+yarn install
 ```
 
 
@@ -28,4 +29,4 @@ And browse
 http://localhost:5000
 ```
 
-Tada !!
+Tada, Enjoy Stunicons !

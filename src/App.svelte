@@ -10,8 +10,8 @@
 		{name: 'Gmail', icon: 'si-gmail'},
 		{name: 'Heart', icon: 'si-heart'},
 		{name: 'Github', icon: 'si-github'},
-		{name: 'Slack', icon: 'si-slack'},
-	]
+		{name: 'Slack', icon: 'si-slack'}
+	];
 </script>
 
 <section>
@@ -81,6 +81,12 @@
 		margin: 1rem 2rem;
   		text-align: center;
 	}
+	.grid-item:hover {
+		background-color: #f05023;
+		color: white;
+		cursor: pointer;
+		transition: all 0.5s ease-in-out;
+	}
 	.icon {
 		display: flex;
 		flex-direction: column;
@@ -92,7 +98,7 @@
 		padding: 0 6rem;
 	}
 	.example h3 {
-		color: #ff3e00;
+		color: #f05023;
 		text-decoration: underline;
 	}
 
@@ -104,7 +110,7 @@
 	}
 
 	.footer-txt span {
-		color:  #ff3e00;
+		color:  #f05023;
 	}
 
 	@media (min-width: 640px) {
