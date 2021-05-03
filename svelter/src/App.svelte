@@ -3,8 +3,11 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<div> 
+	    <img width="250" height="250" src="/assets/images/si-logo-web-use-01.png" alt="Stunicon Logo">
+		<h1>STUNICONS</h1>
+		<p>Growing icon pack with 50+ editable icons in 3 styles for outstanding UI. <a href="https://svelte.dev/tutorial">Contribute on Github</a></p>
+	</div>
 </main>
 
 <style>
