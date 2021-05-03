@@ -13,19 +13,68 @@
 	
 <div class="grid-container">
 	<div class="grid-item">
-		<i class="si-home"></i>
+		<div class="icon">
+			<i class="si-location-off"></i>
+		</div>
 	</div>
-	<div class="grid-item">2</div>
-	<div class="grid-item">3</div>
-	<div class="grid-item">4</div>
-	<div class="grid-item">5</div>
-	<div class="grid-item">6</div>
-	<div class="grid-item">7</div>
-	<div class="grid-item">8</div>
-	<div class="grid-item">9</div>
-</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
+	<div class="grid-item">
+		<i class="si-location-off"></i>
+	</div>
 </div>
 
+</div>
+
+<footer>
+   <p class="footer-txt">Made by <span>Stunnity</span></p>
+</footer>
 <style>
 	main {
 		text-align: center;
@@ -34,25 +83,31 @@
 		margin: 0 auto;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
 
 	.grid-container {
 		display: grid;
 		grid-template-columns: auto auto auto auto auto auto;
-
 		padding: 10px;
 	}
 	.grid-item {
-		border: 1px solid rgba(0, 0, 0, 0.8);
-		padding: 20px;
-		font-size: 30px;
+		border: none;
+		background-color: #f8f8f8;
+		border-radius: 6px;
+		height: 5rem;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+		width: 7rem;
+		font-size: 20px;
 		margin: 1rem 2rem;
   		text-align: center;
+	}
+	.icon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: fit-content;
+		width: fit-content;
 	}
 	.example {
 		padding: 0 6rem;
@@ -60,6 +115,17 @@
 	.example h3 {
 		color: #ff3e00;
 		text-decoration: underline;
+	}
+
+	footer {
+		padding: 0 3rem ;
+	}
+	.footer-txt {
+		text-align: right;
+	}
+
+	.footer-txt span {
+		color:  #ff3e00;
 	}
 
 	@media (min-width: 640px) {
