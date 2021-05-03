@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import copy from 'rollup-plugin-copy'
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -68,7 +69,15 @@ export default {
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		production && terser()
+		production && terser(),
+
+		copy({
+			targets: [
+			  { src: 'node_modules/stunicons/fonts/style.css', 
+			    dest: 'public/assets/css',
+				rename: (name, extension, fullPath) => `stunicons.${extension}` },
+			]
+		  })
 	],
 	watch: {
 		clearScreen: false

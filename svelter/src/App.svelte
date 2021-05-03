@@ -13,7 +13,7 @@
 	
 <div class="grid-container">
 	<div class="grid-item">
-		<i class="si-location-off"></i>
+		<i class="si-home"></i>
 	</div>
 	<div class="grid-item">2</div>
 	<div class="grid-item">3</div>
