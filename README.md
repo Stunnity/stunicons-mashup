@@ -3,9 +3,15 @@ Mashup with Stunicons
 
 ## Get started
 
-Install the dependencies...
+Clone the repo
 
 ```bash
-cd svelte-app
+git clone https://github.com/DivinIrakiza/stunicons-mashup.git
+```
+
+Install the dependencies
+
+```bash
+cd stunicons-mashup
 npm install
 ```

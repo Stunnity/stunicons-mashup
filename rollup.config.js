@@ -73,9 +73,8 @@ export default {
 
 		copy({
 			targets: [
-			  { src: 'node_modules/stunicons/fonts/style.css', 
-			    dest: 'public/assets/css',
-				rename: (name, extension, fullPath) => `stunicons.${extension}` },
+			  { src: 'node_modules/stunicons/fonts/**', 
+			    dest: 'public/assets/css'}
 			]
 		  })
 	],

@@ -1,86 +1,65 @@
 <script>
+	const icons = [
+		{name: 'Home', icon: 'si-home'},
+		{name: 'Menu Bar', icon: 'si-menu-bar'},
+		{name: 'Plus', icon: 'si-plus'},
+		{name: 'Search', icon: 'si-search'},
+		{name: 'User', icon: 'si-user'},
+		{name: 'Arrow Down', icon: 'si-arrow-down'},
+		{name: 'Arrow Left', icon: 'si-arrow-left'},
+		{name: 'Gmail', icon: 'si-gmail'},
+		{name: 'Heart', icon: 'si-heart'},
+		{name: 'Github', icon: 'si-github'},
+		{name: 'Slack', icon: 'si-slack'},
+	]
 </script>
 
-<main>
-	<div class="lander">  
-	    <img width="200" height="200" src="/assets/images/si-logo-web-use-01.png" alt="Stunicon Logo">
-		<!-- <h1>STUNICONS</h1>
-		<p>Growing icon pack with 50+ editable icons in 3 styles for outstanding UI. <a href="https://svelte.dev/tutorial">Contribute on Github</a></p> -->
-	</div>
-</main>
-<div class="example">
-	<h3>Examples</h3>
-	
-<div class="grid-container">
-	<div class="grid-item">
-		<div class="icon">
-			<i class="si-location-off"></i>
+<section>
+	<main>
+		<div class="lander">  
+			<img width="200" height="200" src="/assets/images/si-logo-web-use-01.png" alt="Stunicon Logo">
+			<span>Stunicons</span>
+		</div>
+	</main>
+	<div class="example">
+		<h3>Examples</h3>
+		<div class="grid-container">
+			{#each icons as icon, i}
+				<div class="grid-item">
+					<div class="icon">
+						<i class="{icon.icon}"></i>
+					</div>
+				</div>
+			{/each}
 		</div>
 	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-	<div class="grid-item">
-		<i class="si-location-off"></i>
-	</div>
-</div>
-
-</div>
+</section>
 
 <footer>
    <p class="footer-txt">Made by <span>Stunnity</span></p>
 </footer>
 <style>
+	
+	section {
+		height: 90vh;
+	}
+	
 	main {
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+	}
+
+	.lander {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 4rem;
+	}
+
+	.lander span {
+		font-size: 4rem;
 	}
 
 
