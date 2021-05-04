@@ -1,5 +1,5 @@
 # Stunicons  Mashup
-Mashup with Stunicons
+A Svlete Mashup for Stunicons
 
 ## Get started
 
